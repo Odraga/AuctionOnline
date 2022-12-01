@@ -1,0 +1,14 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 7rem;
+}
+
+.brand a{
+    text-decoration: none;
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}

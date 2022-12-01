@@ -1,0 +1,44 @@
+.navBar__ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__ul__li{
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
+.navbar__ul__li::after{
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+.navbar__ul__li:hover::after{
+    height: 2rem;
+}
+
+
+.NavBar__ul__li__a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.NavBar__ul__li__a:hover {
+    color: #000;
+}
+
+/*.navBarContainer{
+}
+
+.navBarContainer__li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}*/
