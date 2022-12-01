@@ -1,0 +1,121 @@
+.home{
+    display: contents;
+}
+
+.home h2{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(0deg, rgb(112, 112, 112), rgb(185, 178, 178));
+    color: white;
+}
+
+.home__presentation{    
+    display: block;
+}
+
+.home__presentation__image{
+    display: block;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(185, 178, 178));
+    
+}
+
+.home__presentation__image:hover{
+    opacity: 0.9;
+}
+
+.home__presentation__image img{
+    width: 46em;
+    border-radius: 10px;
+    margin: 1em;
+    /*border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;*/
+}
+.home__presentation__container__information{
+    display: block;
+    text-align: center;
+    
+}
+.home__presentation__container__information:hover{
+    opacity: 0.9;
+}
+.home__presentation__information{
+    text-align: center;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(145, 41, 41));
+    color: rgb(255, 255, 255);
+    padding: 8em;
+    text-align: center;
+
+}
+
+.home__function{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.home__function:hover{
+    opacity: 0.9;
+}
+
+.home__function__auction{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.home__function__auction__information{
+    width: 25em;
+}
+
+.home__function__auction:hover{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.home__function__auction__information button{
+    border: 0px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    width: 10em;
+    height: 4em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home__function__auction__information button:hover{
+    background-color: rgb(0,0,0);
+}
+
+.home__function__onsale{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 10px;
+}
+.home__function__onsale__information{
+    width: 25em;
+}
+
+.home__function__onsale:hover{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.home__function__onsale__information button{
+    border: 0px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    width: 10em;
+    height: 4em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home__function__onsale__information button:hover{
+    background-color: rgb(0,0,0);
+
+}
