@@ -14,9 +14,10 @@
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font: normal 16px sans-serif;
   padding: 25px 50px;
+
 }
 
 .footer-left .copyright{
@@ -61,7 +62,7 @@
 }
 
 .footer-distributed .footer-right {
-  float: right;
+display: block;
   margin-top: 6px;
   max-width: 180px;
 }

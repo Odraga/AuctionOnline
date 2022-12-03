@@ -7,7 +7,6 @@ function Auction() {
     <>
       <AuctionContextProvider>
         <AuctionFilter />
-        <br />
         <AuctionList />
       </AuctionContextProvider>
     </>

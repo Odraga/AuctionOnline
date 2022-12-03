@@ -9,7 +9,8 @@
 }
 
 .navbar__ul__li::after{
-    content: '';
+    
+    content: '/\\';
     width: 0rem;
     height: 0.15rem;
     background-color: #fff;
@@ -18,27 +19,23 @@
     margin: 0.2rem auto 0 auto;
     transition: all 0.3s ease-in-out;
 }
+
 .navbar__ul__li:hover::after{
-    height: 2rem;
+    content: '\\/';
 }
 
 
-.NavBar__ul__li__a {
+.navBar__ul__li__a {
     text-decoration: none;
     color: #aaa;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.NavBar__ul__li__a:hover {
+.navBar__ul__li__a:hover {
     color: #000;
 }
 
-/*.navBarContainer{
+.navBar{
+    display: block;
 }
-
-.navBarContainer__li{
-    list-style: none;
-    text-align: center;
-    display: inline-block;
-}*/

@@ -2,6 +2,8 @@ import { AuctionCard } from "./AuctionCard/AuctionCard"
 import { AuctionContext } from "../../../../context/AuctionContext"
 import {useContext} from "react"
 
+import style from "./AuctionList.module.css"
+
 function AuctionList() {
 
     const {auctions} = useContext(AuctionContext)
@@ -15,10 +17,10 @@ function AuctionList() {
     }
 
     return (
-        <div>
+        <div className={style.auctionList__container}>
             {
                 auctions.map((auction) => (
-                    <div key={auction.id}>
+                    <div className={style.auction__card__item} key={auction.id}>
                         <AuctionCard auction_data={auction}/>
                     </div>
                 ))

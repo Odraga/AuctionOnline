@@ -12,22 +12,26 @@ export function AuctionContextProvider(props) {
     useEffect(() => {
         setAuctions(listauction)
         setCategories(listcategories)
-        
     }, []);
     
     function searchByCategories(categorie){
-        let filterAuctions = listauction.filter((auction) => categorie == auction.categorie)
-        setAuctions(filterAuctions)
+        if (categorie == "ALL"){
+            setAuctions(listauction)
+        }
+        else{
+            let filterAuctions = listauction.filter((auction) => categorie == auction.categorie)
+            setAuctions(filterAuctions)
+        }
+        
     }
 
     function searchAuction(categorie, search){
-        if(categorie == "DEFAULT" || categorie == ""){
+        if(categorie == "DEFAULT" || categorie == "ALL" || categorie == ""){
             if(auctions.length == 0 && search == ""){
                 setAuctions(listauction)
             }
             else{
                 let filterAuctions = listauction.filter((auction) => auction.title.includes(search))
-                
                 setAuctions(filterAuctions)
             }
         }

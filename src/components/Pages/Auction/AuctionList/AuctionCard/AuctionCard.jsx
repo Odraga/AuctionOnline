@@ -1,26 +1,29 @@
+import style from "./AuctionCard.module.css"
+
 export function AuctionCard({auction_data}) {
   return (
-    <div>
-        
+    <>
         <div>
-            <img src={auction_data.image_url} alt="" width={100}/>
+            <h3>{auction_data.title}</h3>
         </div>
+        <div className={style.image__container}>
+            <img src={auction_data.image_url} alt={auction_data.title}/>
+        </div>
+        <h2>Starting Price: {auction_data.starting_price}$</h2>
         <br />
-        <span>ID: {auction_data.id} || <b>Starting Price: {auction_data.starting_price}$</b></span>
+        <hr />
+        <span>End of auction: {auction_data.enf_of_auction}</span>
+        <hr />
         <br />
         <div>
-            <h2>{auction_data.title}</h2>
-            <p>{auction_data.description}</p>
-            <span><b>Enf of auction: {auction_data.enf_of_auction}</b></span>
             <div>
-                <button>
+                <button className={style.button_bidup} onClick={() => {
+                    alert(auction_data.id)
+                }}>
                     Bid up
                 </button>
             </div>
         </div>
-        <br />
-        <hr />
-        <br />
-    </div>
+    </>
   )
 }
