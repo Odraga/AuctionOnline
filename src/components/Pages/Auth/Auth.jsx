@@ -1,14 +1,13 @@
 import Register from "./Register/Register"
 import Login from "./Login/Login"
 
+import style from "./Auth.module.css"
+
 function Auth() {
   return (
-    <div>
-        <Login />
-        <br />
-        <hr />
-        <br />
-        <Register />
+    <div className={style.auth_login_register__container}>
+      <Login />
+      <Register />
     </div>
   )
 }

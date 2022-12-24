@@ -1,0 +1,141 @@
+.form_register__container{
+    padding: 50px 0px 50px 0px;
+    margin: 20px 10px 10px 10px;   
+    display: block;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(145, 41, 41));
+    filter: drop-shadow(10px 10px 10px rgb(7, 7, 7));
+    border-radius: 10px;
+    transition: border-radius 2s, transform 2s;
+}
+.form_register__container:hover{
+    border-radius: 150px;
+    transform: rotate(1deg);
+}
+
+.form_register__container__h2{
+    text-align: center;
+    font-size: 24px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.form_register__container__firstname{
+    margin: 8px;
+}
+
+.form_register__container__firstname input{
+    width: 20em;
+    padding: 8px;
+    border-style: none;
+}
+
+.form_register__container__lastname{
+    margin: 8px;
+}
+
+.form_register__container__lastname input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__email{
+    margin: 8px;
+}
+
+.form_register__container__email input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__phone{
+    margin: 8px;
+}
+
+.form_register__container__phone input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__address{
+    margin: 8px;
+}
+
+.form_register__container__address input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__postalcode{
+    margin: 8px;
+}
+
+.form_register__container__postalcode input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__country{
+    margin: 8px;
+}
+
+.form_register__container__country input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__username{
+    margin: 8px;
+}
+
+.form_register__container__username input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__password{
+    margin: 8px;
+}
+
+.form_register__container__password input{
+    border-style: none;
+    width: 20em;
+    padding: 8px;
+}
+
+.form_register__container__viewpassword{
+    margin: 4px;
+    padding: 4px;
+}
+
+.form_register__container__viewpassword input{
+    margin-right: 10px;
+}
+
+.form_register__container__register{
+    text-align: center;
+    margin: 8px;
+    padding: 4px;
+}
+
+.form_register__container__register button{
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 12em;
+    color:white;
+    cursor: pointer;
+    background-color: rgba(145, 255, 141, 0.5);
+    transition: background-color 0.8s;
+}
+
+.form_register__container__register button:hover{
+    background-color: rgba(9, 255, 0, 0.5);
+}

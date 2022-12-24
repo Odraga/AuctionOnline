@@ -1,20 +1,26 @@
+import style from './Login.module.css'
+
 function Login() {
   return (
-    <form >
-      <div>
+    <form className={style.form_login__container}>
+      <div className={style.form_login__container__h2}>
         <h2>Login</h2>
       </div>
       <div>
-        <div>
+        <div className={style.form_login__container__username}>
           <input type="text" placeholder="Username"/>
         </div>
-        <div>
+        <div className={style.form_login__container__password}>
           <input type="password" placeholder="Password"/>
-          <input type="checkbox" name="" id="viewPasswordLogin" />
-          <label htmlFor="viewPasswordLogin">View Password</label>
         </div>
-        <div>
-          <button>Login</button>
+        <div className={style.form_login__container__viewpassword}>
+            <input type="checkbox" name="" id="viewPasswordLogin" />
+            <label htmlFor="viewPasswordLogin">View Password</label>
+          </div>
+        <div className={style.form_login__container__login}>
+          <button>
+            Login
+          </button>
         </div>
       </div>
     </form>

@@ -1,0 +1,71 @@
+.form_login__container{
+    padding: 50px 0px 50px 0px;
+    margin: 10px 10px 20px 10px;     
+    display: block;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(145, 41, 41, 0.8));
+    filter: drop-shadow(10px 10px 10px rgb(7, 7, 7));
+    border-radius: 10px;
+    transition: border-radius 2s, transform 2s;
+}
+
+.form_login__container:hover{
+    border-radius: 150px;
+    transform: rotate(1deg);
+}
+
+.form_login__container__h2{
+    text-align: center;
+    font-size: 24px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.form_login__container__username{
+    margin: 8px;
+}
+
+.form_login__container__username input{
+    border-style: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.form_login__container__password{
+    margin: 8px;
+}
+
+.form_login__container__password input{
+    border-style: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.form_login__container__viewpassword{
+    margin: 4px;
+    padding: 4px;
+}
+
+.form_login__container__viewpassword input{
+    margin-right: 10px;
+}
+
+.form_login__container__login{
+    text-align: center;
+    margin: 8px;
+    padding: 4px;
+}
+
+.form_login__container__login button{
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 12em;
+    color:white;
+    cursor: pointer;
+    background-color: rgba(255, 141, 141, 0.5);
+    transition: background-color 0.8s;
+}
+.form_login__container__login button:hover{
+    background-color: rgba(253, 0, 0, 0.5);
+}

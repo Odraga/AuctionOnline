@@ -10,7 +10,7 @@ function AuctionList() {
     
     if (auctions.length == 0){
         return( 
-            <div>
+            <div className={style.auctionList__container}>
                 <h2>Auction not found.</h2>
             </div>
         )

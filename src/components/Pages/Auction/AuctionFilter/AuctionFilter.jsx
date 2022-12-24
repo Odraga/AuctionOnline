@@ -20,7 +20,7 @@ function AuctionFilter() {
     <>
 
       <div className={style.search__container}>
-        <input id="searchItem" type="search" placeholder="Search Auction" onChange={(e) => setSearchItem(e.target.value)}/>
+        <input id="searchItem" type="search" placeholder="Search Auction by Title" onChange={(e) => setSearchItem(e.target.value)}/>
         <button onClick={(e) => handleSubmit(e)}>Search</button>
       </div>
       <div className={style.filter__container}>      

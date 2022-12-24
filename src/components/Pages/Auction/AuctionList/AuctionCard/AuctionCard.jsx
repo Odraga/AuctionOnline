@@ -12,7 +12,7 @@ export function AuctionCard({auction_data}) {
         <h2>Starting Price: {auction_data.starting_price}$</h2>
         <br />
         <hr />
-        <span>End of auction: {auction_data.enf_of_auction}</span>
+        <span> <i> End of auction: {auction_data.enf_of_auction}</i></span>
         <hr />
         <br />
         <div>

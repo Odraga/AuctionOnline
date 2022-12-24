@@ -15,11 +15,10 @@
     width: 5em;
     color:white;
     cursor: pointer;
-
     background-color: rgba(90, 122, 0, 0.5);
+    transition: background-color 0.8s;
 }
 
 .button_bidup:hover{
     background-color: rgba(90, 122, 0, 1);
-    padding: 11px;
 }

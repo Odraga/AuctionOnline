@@ -14,9 +14,9 @@
 }
 
 .search__container{
-    text-align: center;
+    float: right;
     padding: 2px;
-    margin: 12px 0px 12px 0px;
+    margin: 12px 24px 12px 0px;
 }
 
 .search__container input{
