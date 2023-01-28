@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import style from "./Register.module.css"
 
 function Register() {
+  const [viewPass, setViewPass] = useState('Password')
+
   return (
     <form className={style.form_register__container}>
       <div className={style.form_register__container__h2}>
@@ -31,10 +34,12 @@ function Register() {
         <input type="text" placeholder="Username"/>
       </div>
       <div className={style.form_register__container__password}>
-        <input type="password" placeholder="password"/>
+        <input type={viewPass} placeholder="password"/>
       </div>
       <div className={style.form_register__container__viewpassword}>
-        <input type="checkbox" name="" id="viewPasswordRegister" />
+        <input type="checkbox" name="" onChange={(e) => {
+          e.currentTarget.checked ? setViewPass('Text') : setViewPass('Password')
+        }} />
         <label htmlFor="viewPasswordRegister">View Password</label>
       </div>
       <div className={style.form_register__container__register}>

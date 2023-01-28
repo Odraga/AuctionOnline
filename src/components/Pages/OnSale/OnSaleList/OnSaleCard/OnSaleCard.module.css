@@ -1,0 +1,24 @@
+.image__container{
+    background-size: cover;
+    height: 12em;
+    padding: 24px;
+
+}
+.image__container img{
+    height: 100%;
+}
+
+.button_buy{
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 5em;
+    color:white;
+    cursor: pointer;
+    background-color: rgba(90, 122, 0, 0.5);
+    transition: background-color 0.8s;
+}
+
+.button_buy:hover{
+    background-color: rgba(90, 122, 0, 1);
+}

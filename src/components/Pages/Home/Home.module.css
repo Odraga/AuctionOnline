@@ -20,11 +20,12 @@
     padding: 2em;
     text-align: center;
     background: linear-gradient(180deg, rgb(0, 0, 0), rgb(185, 178, 178));
+    transition: opacity 1.2s;
     
 }
 
 .home__presentation__image:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .home__presentation__image img{
@@ -35,11 +36,12 @@
 }
 .home__presentation__container__information{
     display: block;
+    transition: opacity 1.2s;
     text-align: center;
     
 }
 .home__presentation__container__information:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .home__presentation__information{
     text-align: center;
@@ -54,10 +56,11 @@
     display: block;
     text-align: center;
     margin-bottom: 36px;
+    transition: opacity 1.2s;
 }
 
 .home__function:hover{
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .home__function__auction{
@@ -65,6 +68,7 @@
     cursor: pointer;
     margin-right: 5px;
     padding: 10px;
+    transition: background-color 1.2s;
 }
 
 .home__function__auction__information{
@@ -85,6 +89,7 @@
     height: 4em;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 1.2s;
 }
 
 .home__function__auction__information button:hover{
@@ -96,6 +101,7 @@
     cursor: pointer;
     margin-left: 5px;
     padding: 10px;
+    transition: background-color 1.2s;
 }
 .home__function__onsale__information{
     width: 25em;
@@ -115,6 +121,8 @@
     height: 4em;
     cursor: pointer;
     border-radius: 5px;
+    
+    transition: background-color 1.2s;
 }
 
 .home__function__onsale__information button:hover{

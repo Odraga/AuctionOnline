@@ -1,0 +1,35 @@
+.filter__container{
+    display: block;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(145, 41, 41));
+    color: white;
+    padding: 24px 24px 24px 24px;
+}
+
+.categories__container{
+    display: inline-block;
+}
+
+.order__auction__container{
+    display: inline-block;
+}
+
+.search__container{
+    float: right;
+    padding: 2px;
+    margin: 12px 24px 12px 0px;
+}
+
+.search__container input{
+    font-size: 12px;
+    width: 24em;
+    height: 3em;
+}
+
+.search__container button{
+    font-size: 12px;
+    border-style: none;
+    cursor: pointer;
+    width: 4em;
+    height: 3em;
+}
+

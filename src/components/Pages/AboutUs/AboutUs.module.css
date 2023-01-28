@@ -1,0 +1,47 @@
+.aboutus__container{
+    position: relative;
+    display: inline;
+    text-align: center;
+}
+.aboutus__container__information{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    opacity: 0.6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:  cursive;
+
+    transition: opacity 1s;
+}
+
+.aboutus__container__information:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
+.aboutus__container__title{
+
+    font-size: 4vh;
+}
+
+.aboutus__container__text{
+    font-size: 2.5vh;
+}
+
+.aboutus__container__sewingMachine{
+    background-size: cover;
+    height: 100vh;
+    margin: 4em;
+}
+
+.aboutus__container__sewingMachine img{
+    width: 100%;
+    height: 100%;
+}

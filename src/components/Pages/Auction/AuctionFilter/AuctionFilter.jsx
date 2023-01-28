@@ -5,7 +5,7 @@ import style from "./AuctionFilter.module.css"
 
 function AuctionFilter() {
 
-  const {categories, searchAuction, searchByCategories} = useContext(AuctionContext)
+  const {categories, searchAuction, searchByCategories, orderByPriceOrDate} = useContext(AuctionContext)
 
   const [categorie, setCategorie] = useState("")
   const [searchItem, setSearchItem] = useState("")
@@ -39,16 +39,16 @@ function AuctionFilter() {
               )
             }
           </select>
-
         </div>
-        <span> Order by </span>
+        <span>Order by </span>
         <div className={style.order__auction__container}>
-            <select name="" id="" defaultValue={'DEFAULT'}>
-                <option value="DEFAULT">Select Order Auction</option>
-                <option value="">Mayor a menor oferta</option>
-                <option value="">Menor a mayor oferta</option>
-                <option value="">Mayor a Menor tiempo restante</option>
-                <option value="">Menor a Mayor tiempo restante</option>  
+            <select name="order" id="order" defaultValue={'DEFAULT'} onChange={(e) => {
+              orderByPriceOrDate(e.currentTarget.value)
+            }}>
+                <option id="none" value="DEFAULT" disabled>Select Order Auction</option>
+                <option id="none "value="REGULAR">Regular Order</option>
+                <option value="0">Largest to Smallest bid</option>
+                <option value="1">Smallest to Largest bid</option>
             </select>
         </div>
       </div>

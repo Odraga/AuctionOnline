@@ -1,11 +1,11 @@
 .navBar__ul{
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 
 .navbar__ul__li{
+    display: inline-block;
     list-style-type: none;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .navbar__ul__li::after{

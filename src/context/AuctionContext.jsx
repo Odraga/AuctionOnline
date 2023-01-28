@@ -13,6 +13,8 @@ export function AuctionContextProvider(props) {
         setAuctions(listauction)
         setCategories(listcategories)
     }, []);
+
+    
     
     function searchByCategories(categorie){
         if (categorie == "ALL"){
@@ -22,7 +24,6 @@ export function AuctionContextProvider(props) {
             let filterAuctions = listauction.filter((auction) => categorie == auction.categorie)
             setAuctions(filterAuctions)
         }
-        
     }
 
     function searchAuction(categorie, search){
@@ -42,30 +43,17 @@ export function AuctionContextProvider(props) {
 
     }
 
-    /*function searchAuction(categorie, search){
-        if(categorie == "DEFAULT" || categorie == ""){
-            if(auctions.length == 0 && search == ""){
-                setAuctions(listauction)
-            }
-            else{
-                let filterAuctions = listauction.filter((auction) => auction.title.includes(search))
-                
-                setAuctions(filterAuctions)
-            }
+    function orderByPriceOrDate(nameOrder){
+        if(nameOrder == "0"){
+            setAuctions([...auctions].sort((price1, price2) => price2.starting_price - price1.starting_price))
+        }
+        else if (nameOrder == "1"){
+            setAuctions([...auctions].sort((price1, price2) => price1.starting_price - price2.starting_price))
         }
         else{
-            if(search == ""){
-                let filterAuctions = listauction.filter((auction) => categorie == auction.categorie)
-                setAuctions(filterAuctions)
-            }
-            else{
-                let filterAuctions = listauction.filter((auction) => categorie == auction.categorie && auction.title.includes(search))
-                setAuctions(filterAuctions)
-            }
-            
+            setAuctions(auctions)
         }
-
-    }*/
+    }
 
     return (
         <AuctionContext.Provider value={{
@@ -73,6 +61,7 @@ export function AuctionContextProvider(props) {
             categories,
             searchAuction,
             searchByCategories,
+            orderByPriceOrDate,
         }}>
             {props.children}
         </AuctionContext.Provider>

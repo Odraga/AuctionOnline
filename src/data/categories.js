@@ -31,4 +31,8 @@ export const listcategories = [
         id: 7,
         name: "Billetes y Monedas",
     },
+    {
+        id:8,
+        name: "Technology"
+    },
 ]
